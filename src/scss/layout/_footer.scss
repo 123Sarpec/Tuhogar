@@ -1,0 +1,40 @@
+
+.footer {
+    //padding: $separacion, 1;
+    background-color: $grisOscuro;
+    padding: 1rem 0 1rem 0;
+    margin-bottom: 0;
+
+
+/*pie de pagina*/
+    .contenedor-footer {
+        @include tablet {
+            display: flex;
+            align-items: center;
+        }
+        
+
+        a {
+            color: $blanco;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+
+            @include tablet {
+                margin-right: 2rem;
+                font-size: 1.8rem;
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+
+        }
+    }
+
+    .copyright {
+        color: $blanco;
+        text-align: center;
+
+    }
+}
